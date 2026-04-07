@@ -1,0 +1,155 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c19fec;
+}
+
+header{
+    background-color: rgb(148, 3, 3);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.banner{
+    background-color: #a87ce2;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content{
+    width: 80%;
+}
+
+.banner h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+}
+.banner p{
+    font-size: 1.5rem;
+}
+
+nav a{
+    color:#333;
+    text-decoration: none;
+    margin: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #c19fec;
+;
+}
+
+nav a:hover{
+    background-color:#d8c9ec;
+    color: #fff;
+}
+
+main{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.categoria{
+    margin-bottom: 2rem;
+}
+
+.produto{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.preco{
+    font-weight: bold;
+    color: rgb(230, 76, 76)
+}
+
+.adicionar{
+    background-color: #a87ce2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#pedidos{
+    background-color: #a87ce2;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#lista-pedido{
+    list-style: none;
+    padding: 0;
+}
+
+#finalizar-pedido{
+    background-color: #c19fec;
+    border: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.redes-sociais a{
+    background-color: #a87ce2;
+    color:#333;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color:#a87ce2;
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media(min-width: 768px){
+    main{
+        width: 60%;
+    }
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+}
+
